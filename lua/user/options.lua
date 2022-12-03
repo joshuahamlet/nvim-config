@@ -46,3 +46,11 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+vim.cmd [[cnoreabbrev vwst VimwikiSearchTags]]
+
+--vimwiki setup--
+vim.cmd "set nocompatible"
+vim.cmd "filetype plugin on"
+vim.cmd "syntax on"
+vim.cmd "let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]"

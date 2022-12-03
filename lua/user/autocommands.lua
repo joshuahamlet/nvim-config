@@ -13,6 +13,10 @@ vim.cmd [[
     autocmd FileType gitcommit setlocal spell
   augroup end
 
+  augroup JsonToJsonc
+      autocmd! FileType json setlocal filetype=jsonc
+  augroup end
+  
   augroup _markdown
     autocmd!
     autocmd FileType markdown setlocal wrap
@@ -35,3 +39,4 @@ vim.cmd [[
 --   autocmd!
 --   autocmd BufWritePre * lua vim.lsp.buf.formatting()
 -- augroup end
+
