@@ -49,6 +49,13 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 vim.cmd [[cnoreabbrev vwst VimwikiSearchTags]]
 
+vim.cmd [[set nu rnu]]
+vim.cmd [[cnoreabbrev abs# set nu nornu]]
+vim.cmd [[cnoreabbrev rel# set nonu rnu]]
+vim.cmd [[cnoreabbrev hyb# set nu rnu]]
+vim.cmd [[cnoreabbrev no# set nonu nornu]]
+
+
 --vimwiki setup--
 vim.cmd "set nocompatible"
 vim.cmd "filetype plugin on"
